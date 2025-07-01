@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PersonalPortfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+  <style>
+    /* Make the body and html take full height and width and remove margin */
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: 'Permanent Marker', cursive, Arial, sans-serif;
+      color: #3E1F47;
+      background: transparent;
+    }
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      font-size: 5vw;
+      min-font-size: 2rem;
+      max-font-size: 5rem;
+      margin: 0 0 1rem 0;
+      text-align: center;
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 10vw;
+      }
+      button.github-button {
+        font-size: 12px;
+        padding: 3px 10px;
+      }
+      svg.github-icon {
+        width: 18px;
+        height: 18px;
+      }
+    }
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 12vw;
+      }
+      button.github-button {
+        font-size: 10px;
+        padding: 2px 8px;
+      }
+      svg.github-icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    a.github-link {
+      text-decoration: none;
+    }
+    a.startup-link {
+      text-decoration: none;
+    }
+    button.github-button {
+      background: transparent;
+      position: relative;
+      padding: 5px 15px;
+      display: flex;
+      align-items: center;
+      font-size: 17px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid rgb(36, 41, 46);
+      border-radius: 25px;
+      outline: none;
+      overflow: hidden;
+      color: rgb(36, 41, 46);
+      transition: color 0.3s 0.1s ease-out;
+      text-align: center;
+      margin: 0 auto;
+    }
+    button.github-button:hover {
+      color: #fff;
+      border: 1px solid rgb(36, 41, 46);
+    }
+    button.github-button:hover::before {
+      box-shadow: inset 0 0 0 10em rgb(36, 41, 46);
+    }
+    button.github-button::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      content: "";
+      border-radius: 50%;
+      display: block;
+      width: 20em;
+      height: 20em;
+      left: -5em;
+      text-align: center;
+      transition: box-shadow 0.5s ease-out;
+      z-index: -1;
+    }
+    button.github-button span {
+      margin: 10px;
+    }
+    svg.github-icon {
+      width: 28px;
+      height: 28px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-wrapper">
+    <h1>TahaMoazzam</h1>
+    <a href="https://github.com/Aecotyle" target="_blank" rel="noopener noreferrer" class="github-link">
+      <button class="github-button" aria-label="GitHub">
+        <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"/>
+        </svg>
+        <span>GitHub</span>
+      </button>
+    </a>
+    <a href="https://interactionweb.github.io/SITE/" target="_blank" rel="noopener noreferrer" class="startup-link">
+      <button class="startup-button" aria-label="My Startup">My Startup</button>
+    </a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+  <script>
+  VANTA.FOG({
+    el: "body",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    highlightColor: 0x645933,
+    midtoneColor: 0xe820ad,
+    lowlightColor: 0xe85d5d,
+    baseColor: 0xffe9e9,
+    blurFactor: 0.61,
+    speed: 2.60,
+    zoom: 1.40
+  })
+  </script>
+  <style>
+    .startup-button {
+      margin-top: 1rem;
+      background: transparent;
+      border: 1px solid rgb(36, 41, 46);
+      border-radius: 25px;
+      padding: 8px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgb(36, 41, 46);
+      cursor: pointer;
+      transition: color 0.3s ease, background-color 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      min-width: 100px;
+      box-sizing: border-box;
+    }
+    [dir="rtl"] .startup-button {
+      right: auto;
+      left: 20px;
+    }
+    .startup-button:hover {
+      background-color: rgb(36, 41, 46);
+      color: white;
+    }
+  </style>
+</body>
+</html>
